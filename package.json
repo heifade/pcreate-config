@@ -1,0 +1,13 @@
+{
+  "name": "pcreate-config",
+  "version": "1.0.0",
+  "description": "",
+  "typings": "./src/index",
+  "files": [
+    "src"
+  ],
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
