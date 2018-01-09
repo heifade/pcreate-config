@@ -1,12 +1,16 @@
 {
   "name": "pcreate-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "typings": "./src/index",
+  "main": "./es/index.js",
+  "module": "./es/index.js",
   "files": [
-    "src"
+    "es"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "tsc"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT"
