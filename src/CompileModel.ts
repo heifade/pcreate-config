@@ -2,8 +2,8 @@ export class CompileModel {
   noImplicitAny?: boolean = true;
   outDir: string;
   sourceMap?: boolean = true;
-  module?: "none" | "commonjs" | "amd" | "system" | "umd" | "es2015" | "ESNext" = "commonjs";
-  target?: "ES3" | "ES5" | "ES2015" | "ES2016" | "ES2017" | "ESNEXT" = "ES5";
+  module?: "amd" | "commonjs" | "es2015" | "es6" | "esnext" | "none" | "system" | "umd";
+  target?: "es3" | "es5" | "es2015" | "es2016" | "es2017" | "esnext" = "es5";
   lib?: [
 
       | "es5"

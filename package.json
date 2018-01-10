@@ -1,6 +1,6 @@
 {
   "name": "pcreate-config",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "typings": "./es/index",
   "main": "./es/index.js",
