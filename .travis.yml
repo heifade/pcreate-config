@@ -5,8 +5,8 @@ node_js:
 
 before_script:
   - npm i pcreate
-script:
   - pcreate test
+script:
   - pcreate build
 after_script:
 
