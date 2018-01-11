@@ -1,6 +1,6 @@
 {
   "name": "pcreate-config",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "",
   "typings": "./es/index",
   "main": "./es/index.js",
@@ -8,8 +8,12 @@
   "files": [
     "es"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heifade/pcreate-config.git"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "pcreate build"
   },
   "keywords": [],
   "author": "",
