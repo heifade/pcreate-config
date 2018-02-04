@@ -17,19 +17,11 @@ export interface ProjectConfigModel {
 
   /**
    * 编译选项
-   * 
-   * @type {CompileModel}
+   *
+   * @type {(Array<CompileModel> | CompileModel)}
    * @memberof ProjectConfigModel
    */
-  compile?: CompileModel;
-
-  /**
-   * 多份编译选项
-   * 
-   * @type {Array<CompileModel>}
-   * @memberof ProjectConfigModel
-   */
-  compileList?: Array<CompileModel>;
+  compile?: Array<CompileModel> | CompileModel;
 
   /**
    * 源代码目录
