@@ -21,7 +21,7 @@ export interface ProjectConfigModel {
    * @type {(Array<CompileModel> | CompileModel)}
    * @memberof ProjectConfigModel
    */
-  compile?: Array<CompileModel> | CompileModel;
+  compile?: CompileModel; // Array<CompileModel> |
 
   /**
    * 源代码目录
