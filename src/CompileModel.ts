@@ -1,12 +1,11 @@
-export class CompileModel {
-  noImplicitAny?: boolean = true;
+export interface CompileModel {
+  noImplicitAny?: boolean;
   outDir: string;
-  sourceMap?: boolean = true;
+  sourceMap?: boolean;
   module?: "amd" | "commonjs" | "es2015" | "es6" | "esnext" | "none" | "system" | "umd";
-  target?: "es3" | "es5" | "es2015" | "es2016" | "es2017" | "esnext" = "es5";
+  target?: "es3" | "es5" | "es2015" | "es2016" | "es2017" | "esnext";
   lib?: [
-
-      | "es5"
+      "es5"
       | "es6"
       | "es2015"
       | "es7"
@@ -33,6 +32,6 @@ export class CompileModel {
       | "es2017.intl"
       | "esnext.asynciterable"
   ];
-  declaration?: boolean = true;
-  allowJs?: boolean = false;
+  declaration?: boolean;
+  allowJs?: boolean;
 }

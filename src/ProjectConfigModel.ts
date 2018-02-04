@@ -6,14 +6,14 @@ import { CompileModel } from "./CompileModel";
  * @export
  * @class ProjectConfigModel
  */
-export class ProjectConfigModel {
+export interface ProjectConfigModel {
   /**
    * 项目类型
    *
    * @type {("node" | "webpack" | "angular")}
    * @memberof ProjectConfigModel
    */
-  projectType: "node" | "webpack" | "angular" = "node";
+  projectType: "node" | "webpack" | "angular";
 
   /**
    * 编译选项
@@ -21,9 +21,9 @@ export class ProjectConfigModel {
    * @type {(Array<CompileModel> | CompileModel)}
    * @memberof ProjectConfigModel
    */
-  compile?: Array<CompileModel> | CompileModel;
+  compile: Array<CompileModel> | CompileModel;
 
-  sourceInclude?: Array<string> = ["./src/**/*"];
+  sourceInclude?: Array<string>;
 
   /**
    * 此项目是否是命令行
@@ -34,7 +34,7 @@ export class ProjectConfigModel {
    * @type {(boolean | string | string[])}
    * @memberof ProjectConfigModel
    */
-  command?: boolean | string | string[] = false;
+  command?: boolean | string | string[];
 
   /**
    * 是否生成文档
@@ -42,7 +42,7 @@ export class ProjectConfigModel {
    * @type {boolean}
    * @memberof ProjectConfigModel
    */
-  documents?: boolean = false;
+  documents?: boolean;
 
   /**
    * 是否需要单元测试
@@ -50,5 +50,5 @@ export class ProjectConfigModel {
    * @type {boolean}
    * @memberof ProjectConfigModel
    */
-  unitTest?: boolean = false;
+  unitTest?: boolean;
 }
