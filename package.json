@@ -1,6 +1,6 @@
 {
   "name": "pcreate-config",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "pcreate-config",
   "typings": "./es/index",
   "main": "./es/index.js",
@@ -18,5 +18,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^2.7.1"
+  }
 }
