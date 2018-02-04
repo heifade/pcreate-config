@@ -1,6 +1,6 @@
 import { ProjectConfigModel } from "./src/ProjectConfigModel";
 
-let projectConfig: ProjectConfigModel = {
+let projectConfig = {
   projectType: "node",
   compile: {
     outDir: "./es/",
